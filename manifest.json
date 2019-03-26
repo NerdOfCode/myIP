@@ -1,0 +1,24 @@
+  {
+      "name": "myIP",
+      "version": "0.1",
+      "description": "Query your public IP!",
+      "permissions": ["storage"],
+      "background": {
+	  "scripts": ["main.js"],
+	  "persistent": false
+      },
+      "browser_action": {
+	  "default_popup": "main.html"
+      },
+
+      "web_accessible_resources": [
+	  "ip.js",
+	  "theme.css"
+      ],
+      
+      "manifest_version": 2,
+
+      "icons": {
+	  "128": "myIP.png"
+      }
+  }
